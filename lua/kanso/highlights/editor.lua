@@ -125,9 +125,9 @@ function M.setup(colors, config)
         -- SpellRare	Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
         SpellRare = { undercurl = config.undercurl, underline = not config.undercurl, sp = theme.diag.warning },
         -- StatusLine	Status line of current window.
-        StatusLine = { fg = theme.ui.fg_dim, bg = theme.ui.none },
+        StatusLine = { fg = theme.ui.fg_dim, bg = colors.theme.ui.bg },
         -- StatusLineNC	Status lines of not-current windows. Note: If this is equal to "StatusLine", Vim will use "^^^" in the status line of the current window.
-        StatusLineNC = { fg = theme.ui.nontext, bg = theme.ui.none },
+        StatusLineNC = { fg = theme.ui.nontext, colors.theme.ui.bg },
         -- TabLine		Tab pages line, not active tab page label.
         TabLine = { bg = theme.ui.none, fg = theme.ui.special },
         -- TabLineFill	Tab pages line, where there are no labels.
